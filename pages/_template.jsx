@@ -36,7 +36,7 @@ module.exports = React.createClass({
             </ul>
           </div>
         </Headroom>
-        <div>
+        <div className='content'>
           {this.props.children}
         </div>
       </div>

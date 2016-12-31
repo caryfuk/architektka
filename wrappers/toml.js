@@ -18,6 +18,13 @@ module.exports = React.createClass({
         />
         <h1>{data.title}</h1>
         <p>{data.description}</p>
+        <ul>
+          {data.images && data.images.map((image) => (
+            <li key={image.url}>
+              <img src={image.url} alt={image.title} />
+            </li>
+          ))}
+        </ul>
         <h2>raw data:</h2>
         <pre dangerouslySetInnerHTML={{ __html: toml.dump(data) }} />
       </div>

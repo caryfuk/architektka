@@ -1,0 +1,14 @@
+title = "Dom Barnova"
+order = 1
+description = "Best house ever."
+
+[[images]]
+title = "Dom Barnova"
+description = "popisek 1"
+url = "thumbs/alt1.jpg"
+main = true
+
+[[images]]
+title = "Dom Barnova"
+description = "popisek 2"
+url = "thumbs/alt2.jpg"
