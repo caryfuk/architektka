@@ -54,3 +54,25 @@ img {
   margin: 0;
   display: block;
 }
+
+.detailImages {
+  margin-bottom: 20px;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  li {
+    float: left;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
