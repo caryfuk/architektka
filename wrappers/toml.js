@@ -14,7 +14,7 @@ module.exports = React.createClass({
     return (
       <div>
         <Helmet
-          title={`${data.title} | ${config.siteTitle}`} 
+          title={`${data.title} | ${config.siteTitle}`}
         />
         <h1>{data.title}</h1>
         <p>{data.description}</p>
