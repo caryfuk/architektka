@@ -16,6 +16,8 @@ class CategoryIndex extends React.Component {
             {"name": "keywords", "content": "architecture, houses, apartments, portfolio"},
           ]}
         />
+        <h1>Houses & Apartments</h1>
+        <p>These are my projects for private customers.</p>
         <ProjectList route={this.props.route} />
       </div>
     )
