@@ -1,3 +1,7 @@
-title = "Café"
+title_en = "Café"
+title_sk = "Café"
 order = 1
-description = ""
+description_en = '''
+'''
+description_sk = '''
+'''

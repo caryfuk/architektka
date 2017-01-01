@@ -1,3 +1,7 @@
-title = "Postel"
+title_en = "Bed"
+title_sk = "Postiel"
 order = 1
-description = ""
+description_en = '''
+'''
+description_sk = '''
+'''

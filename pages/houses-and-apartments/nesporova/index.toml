@@ -1,3 +1,7 @@
-title = "Byt Nešporova"
-order = 0
-description = "Toto je popisek projektu."
+title_en = "Nešporova"
+title_sk = "Nešporova"
+order = 1
+description_en = '''
+'''
+description_sk = '''
+'''

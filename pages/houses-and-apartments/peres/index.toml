@@ -1,3 +1,7 @@
-title = "Dom Pereš"
-order = 0
-description = "Toto je popisek projektu."
+title_en = "Pereš"
+title_sk = "Pereš"
+order = 1
+description_en = '''
+'''
+description_sk = '''
+'''

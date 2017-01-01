@@ -20,7 +20,7 @@ class ProjectList extends React.Component {
     )
     sortedPages.forEach((page) => {
       if (access(page, 'file.ext') === 'toml' || access(page, 'data.order')) {
-        const title = access(page, 'data.title') || page.path
+        const title = access(page, 'data.title_sk') || page.path
         pageLinks.push(
           <li
             key={page.path}

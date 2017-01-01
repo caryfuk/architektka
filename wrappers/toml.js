@@ -16,14 +16,14 @@ module.exports = React.createClass({
     return (
       <div>
         <Helmet
-          title={`${data.title} | ${config.siteTitle}`}
+          title={`${data.title_sk} | ${config.siteTitle}`}
         />
-        <h1>{data.title}</h1>
-        <p>{data.description}</p>
+        <h1>{data.title_sk}</h1>
+        <p>{data.description_sk}</p>
         <ul className='detailImages'>
           {data.images && data.images.map((image) => (
             <li key={image.url}>
-              <a href={`1200/${image.url}.jpg`}><img src={`600/${image.url}.jpg`} alt={image.title} /></a>
+              <a href={`1200/${image.url}.jpg`}><img src={`600/${image.url}.jpg`} alt={image.title_sk} /></a>
             </li>
           ))}
         </ul>

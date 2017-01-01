@@ -1,3 +1,7 @@
-title = "Vizus"
+title_en = "Vizus"
+title_sk = "Vizus"
 order = 1
-description = ""
+description_en = '''
+'''
+description_sk = '''
+'''
