@@ -4,3 +4,9 @@ description = '''
 This building with a two floor shopping passage offering a shortcut between Main Street and Main Square and a restaurant on the first floor granting a nice view of Main Street provides comfort to its visitors as well as habitants, securing a piece of nature in a rush city world with the garden on the top.
 Large windows on top of the mall, slanting towers with apartments and patios enable daily light to light up all the interiors and create a pleasant atmosphere for shopping and living.
 '''
+
+[[images]]
+title = "Seven.Four"
+description = "description"
+url = "705-0567_IMG"
+main = true

@@ -5,10 +5,10 @@ description = "Best house ever."
 [[images]]
 title = "Dom Barnova"
 description = "popisek 1"
-url = "alt1.jpg"
+url = "alt1"
 main = true
 
 [[images]]
 title = "Dom Barnova"
 description = "popisek 2"
-url = "alt2.jpg"
+url = "alt2"
