@@ -23,7 +23,7 @@ module.exports = React.createClass({
         <ul className='detailImages'>
           {data.images && data.images.map((image) => (
             <li key={image.url}>
-              <Link to={image.url}><img src={`thumbs/${image.url}`} alt={image.title} /></Link>
+              <a href={image.url}><img src={`thumbs/${image.url}`} alt={image.title} /></a>
             </li>
           ))}
         </ul>

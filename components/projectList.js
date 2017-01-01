@@ -9,8 +9,10 @@ class ProjectList extends React.Component {
   render () {
     const { route } = this.props
     const pageLinks = []
+    console.log(route)
     function isCorrectCategory(value) {
-      return `/${access(value, 'file.dir')}/` === route.path;
+      return route.page.requirePath !== access(value, 'requirePath') &&
+             access(value, 'path').includes(route.page.path)
     }
     const filteredPages = route.pages.filter(isCorrectCategory);
     const sortedPages = sortBy(filteredPages, (page) =>
