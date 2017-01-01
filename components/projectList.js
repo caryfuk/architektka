@@ -1,7 +1,6 @@
 import React from 'react'
 import access from 'safe-access'
 import sortBy from 'lodash/sortBy'
-import { rhythm } from 'utils/typography'
 import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 
@@ -22,12 +21,7 @@ class ProjectList extends React.Component {
       if (access(page, 'file.ext') === 'toml' || access(page, 'data.order')) {
         const title = access(page, 'data.title_sk') || page.path
         pageLinks.push(
-          <li
-            key={page.path}
-            style={{
-              marginBottom: rhythm(1/4),
-            }}
-          >
+          <li key={page.path}>
             <Link to={prefixLink(page.path)}>
               {access(page, 'data.images') && <img src={prefixLink(`${page.path}600/${access(page, 'data.images')[0].url}.jpg`)} />}
               <span>{title}</span>

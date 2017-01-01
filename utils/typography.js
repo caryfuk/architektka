@@ -23,7 +23,7 @@ const options = {
   ],
   headerFontFamily: ['Montserrat', 'sans-serif'],
   bodyFontFamily: ['Arvo', 'sans-serif'],
-  baseFontSize: '18px',
+  baseFontSize: '17px',
   baseLineHeight: 1.65,
   scaleRatio: 2.25,
   plugins: [
