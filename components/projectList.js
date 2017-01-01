@@ -8,7 +8,6 @@ class ProjectList extends React.Component {
   render () {
     const { route } = this.props
     const pageLinks = []
-    console.log(route)
     function isCorrectCategory(value) {
       return route.page.requirePath !== access(value, 'requirePath') &&
              access(value, 'path').includes(route.page.path)
