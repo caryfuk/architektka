@@ -15,23 +15,14 @@ module.exports = React.createClass({
   render () {
     return (
       <div>
-        <Headroom
-          wrapperStyle={{
-            marginBottom: rhythm(1),
-          }}
-          style={{
-            background: 'lightgray',
-          }}
-        >
+        <Headroom>
           <div>
-            <Link to={prefixLink('/')}>
-              Architektka
-            </Link>
+            <Link to={prefixLink('/')}>Architektka</Link>
             <ul>
-              <li><Link to={prefixLink('/houses-and-apartments/')}>Houses & Apartments</Link></li>
-              <li><Link to={prefixLink('/commercial/')}>Commercial</Link></li>
-              <li><Link to={prefixLink('/studies/')}>Studies</Link></li>
-              <li><Link to={prefixLink('/objects/')}>Objects</Link></li>
+              <li><Link to={prefixLink('/houses-and-apartments/')}>Domy a byty</Link></li>
+              <li><Link to={prefixLink('/commercial/')}>Komerčné objekty</Link></li>
+              <li><Link to={prefixLink('/studies/')}>Štúdie</Link></li>
+              <li><Link to={prefixLink('/objects/')}>Objekty</Link></li>
               <li><Link to={prefixLink('/blog/')}>Blog</Link></li>
             </ul>
           </div>

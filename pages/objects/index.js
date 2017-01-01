@@ -10,12 +10,13 @@ class CategoryIndex extends React.Component {
     return (
       <div>
         <Helmet
-          title={`Objects | ${config.siteTitle}`}
+          title={`Objekty | ${config.siteTitle}`}
           meta={[
-            {"name": "description", "content": "Objects"},
-            {"name": "keywords", "content": "architecture, objects, portfolio"},
+            {"name": "description", "content": "Objekty"},
+            {"name": "keywords", "content": "objekty, nábytok, šperky, portfolio, Zuzana Kňazeová, Knazeova"}
           ]}
         />
+        <h1>Objekty</h1>
         <ProjectList route={this.props.route} />
       </div>
     )
