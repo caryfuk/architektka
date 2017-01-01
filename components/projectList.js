@@ -28,7 +28,10 @@ class ProjectList extends React.Component {
               marginBottom: rhythm(1/4),
             }}
           >
-            <Link to={prefixLink(page.path)}>{title}</Link>
+            <Link to={prefixLink(page.path)}>
+              {access(page, 'data.images') && <img src={prefixLink(`${page.path}600/${access(page, 'data.images')[0].url}.jpg`)} />}
+              <span>{title}</span>
+            </Link>
           </li>
         )
       }

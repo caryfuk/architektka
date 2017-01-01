@@ -14,7 +14,6 @@ title_sk = "Dom Barnova"
 description_en = "popisek 1"
 description_sk = "popisek 1"
 url = "alt1"
-main = true
 
 [[images]]
 title_en = "Dom Barnova"
