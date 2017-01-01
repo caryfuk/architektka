@@ -27,8 +27,8 @@ export default class Index extends React.Component {
           slidesToScroll={1}
           arrows={false}
         >
-          <div><img src={`/studies/solo/1200/picarch3a.jpg`} /></div>
-          <div><img src={`/studies/solo/1200/picarch3b.jpg`} /></div>
+          <div><Link to={prefixLink('/studies/solo/')}><img src={`/studies/solo/1200/picarch3a.jpg`} /></Link></div>
+          <div><Link to={prefixLink('/studies/solo/')}><img src={`/studies/solo/1200/picarch3b.jpg`} /></Link></div>
         </Slider>
       </div>
     )
