@@ -49,15 +49,20 @@ module.exports = React.createClass({
             )
           })}
         </ul>
-        <h2>raw data:</h2>
-        <pre dangerouslySetInnerHTML={{ __html: toml.dump(data) }} />
         {isOpen && data.images.length > 0 &&
           <Lightbox
             mainSrc={`1200/${data.images[photoIndex].url}.jpg`}
-            imageTitle={data.images[photoIndex].title_sk}
-            imageCaption={data.images[photoIndex].description_sk}
+            imageTitle={
+              data.images[photoIndex].title_sk ?
+              data.images[photoIndex].title_sk : data.images[photoIndex].title_en
+            }
+            imageCaption={
+              data.images[photoIndex].description_sk ?
+              data.images[photoIndex].description_sk : data.images[photoIndex].description_en
+            }
             nextSrc={`1200/${data.images[(photoIndex + 1) % data.images.length].url}.jpg`}
             prevSrc={`1200/${data.images[(photoIndex + data.images.length - 1) % data.images.length].url}.jpg`}
+            imagePadding={0}
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() => this.setState({
               photoIndex: (photoIndex + data.images.length - 1) % data.images.length,
