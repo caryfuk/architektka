@@ -5,3 +5,52 @@ description_en = '''
 '''
 description_sk = '''
 '''
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "altA"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "altA1"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "altB"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "altB1"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "altB2"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "altB3"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "altC"
