@@ -56,8 +56,8 @@ module.exports = React.createClass({
             mainSrc={`1200/${data.images[photoIndex].url}.jpg`}
             imageTitle={data.images[photoIndex].title_sk}
             imageCaption={data.images[photoIndex].description_sk}
-            nextSrc={data.images[(photoIndex + 1) % data.images.length]}
-            prevSrc={data.images[(photoIndex + data.images.length - 1) % data.images.length]}
+            nextSrc={`1200/${data.images[(photoIndex + 1) % data.images.length].url}.jpg`}
+            prevSrc={`1200/${data.images[(photoIndex + data.images.length - 1) % data.images.length].url}.jpg`}
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() => this.setState({
               photoIndex: (photoIndex + data.images.length - 1) % data.images.length,
