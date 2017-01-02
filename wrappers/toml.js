@@ -25,7 +25,6 @@ module.exports = React.createClass({
     const data = route.page.data
     const title = data.title_sk !== '' ? data.title_sk : data.title_en
     const description = data.description_sk !== '' ? data.description_sk : data.description_en
-    const images = []
     const {
       photoIndex,
       isOpen,
@@ -41,7 +40,6 @@ module.exports = React.createClass({
         <p>{description}</p>
         <ul className='detailImages'>
           {data.images && data.images.map((image, i) => {
-            images.push(`1200/${image.url}.jpg`)
             return (
               <li
                 key={i}
@@ -53,17 +51,19 @@ module.exports = React.createClass({
         </ul>
         <h2>raw data:</h2>
         <pre dangerouslySetInnerHTML={{ __html: toml.dump(data) }} />
-        {isOpen && images.length > 0 &&
+        {isOpen && data.images.length > 0 &&
           <Lightbox
-            mainSrc={images[photoIndex]}
-            nextSrc={images[(photoIndex + 1) % images.length]}
-            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            mainSrc={`1200/${data.images[photoIndex].url}.jpg`}
+            imageTitle={data.images[photoIndex].title_sk}
+            imageCaption={data.images[photoIndex].description_sk}
+            nextSrc={data.images[(photoIndex + 1) % data.images.length]}
+            prevSrc={data.images[(photoIndex + data.images.length - 1) % data.images.length]}
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() => this.setState({
-              photoIndex: (photoIndex + images.length - 1) % images.length,
+              photoIndex: (photoIndex + data.images.length - 1) % data.images.length,
             })}
             onMoveNextRequest={() => this.setState({
-              photoIndex: (photoIndex + 1) % images.length,
+              photoIndex: (photoIndex + 1) % data.images.length,
             })}
           />
         }
