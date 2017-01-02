@@ -5,6 +5,7 @@ import { prefixLink } from 'gatsby-helpers'
 import Helmet from 'react-helmet'
 import { config } from 'config'
 import Lightbox from 'react-image-lightbox';
+import { findDOMNode } from 'react-dom';
 
 module.exports = React.createClass({
   propTypes () {
@@ -43,6 +44,10 @@ module.exports = React.createClass({
             return (
               <li
                 key={i}
+                style={{
+                  animationDelay: `${i*0.05}s`,
+                  WebkitAnimationDelay: `${i*0.05}s`
+                }}
                 onClick={() => this.setState({ isOpen: true, photoIndex: i })}>
                   <img src={`600/${image.url}.jpg`} alt={image.title_sk} />
               </li>

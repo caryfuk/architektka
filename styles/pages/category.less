@@ -8,21 +8,42 @@
       width: 50%;
       padding: 25%;
       position: relative;
+      overflow: hidden;
+      opacity: 0;
+      animation: appear .333s steps(10) forwards;
 
       img {
         .center();
         min-width: 100%;
         min-height: 100%;
         object-fit: cover;
+        transition: all .75s;
+
+        &:hover {
+          transform: translate(-50%, -50%) scale(1.1);
+        }
       }
 
       span {
-        .absPos(auto, 0, 0, 0);
+        .absPos(auto, @baseline/2, @baseline/2, @baseline/2);
+        padding: 0, @baseline/2;
         text-align: center;
-        background: #000;
-        opacity: 0.8;
+        background: #4caf50;
+        opacity: 0;
         color: #fff;
+        transition: all .25s;
+      }
+
+      &:hover {
+
+        span {
+          opacity: 0.8;
+        }
       }
     }
   }
+}
+
+.touch .categoryPage span {
+  opacity: 0.8;
 }

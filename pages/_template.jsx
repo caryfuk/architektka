@@ -14,7 +14,7 @@ module.exports = React.createClass({
   },
   render () {
     return (
-      <div>
+      <div className={("ontouchstart" in document.documentElement) ? ' touch' : ' no-touch'}>
         <Headroom>
           <div>
             <Link to={prefixLink('/')}>Architektka</Link>

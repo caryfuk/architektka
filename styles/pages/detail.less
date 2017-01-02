@@ -1,5 +1,9 @@
 .detailPage {
 
+  p {
+    margin: @baseline/2 0;
+  }
+
   ul {
 
     li {
@@ -9,12 +13,19 @@
       position: relative;
       background: #eee;
       overflow: hidden;
+      opacity: 0;
+      animation: appear .333s steps(10) forwards;
 
       img {
         .center();
         min-width: 100%;
         min-height: 100%;
         object-fit: cover;
+        transition: all .75s;
+
+        &:hover {
+          transform: translate(-50%, -50%) scale(1.1);
+        }
       }
 
       span {

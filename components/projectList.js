@@ -16,15 +16,20 @@ class ProjectList extends React.Component {
     const sortedPages = sortBy(filteredPages, (page) =>
       access(page, 'data.order')
     )
-    sortedPages.forEach((page) => {
+    sortedPages.map((page, i) => {
       if (access(page, 'file.ext') === 'toml' || access(page, 'data.order')) {
         const title = access(page, 'data.title_sk') || page.path
         pageLinks.push(
-          <li key={page.path}>
-            <Link to={prefixLink(page.path)}>
-              {access(page, 'data.images') && <img src={prefixLink(`${page.path}600/${access(page, 'data.images')[0].url}.jpg`)} />}
-              <span>{title}</span>
-            </Link>
+          <li
+            key={page.path}
+            style={{
+              animationDelay: `${i*0.05}s`,
+              WebkitAnimationDelay: `${i*0.05}s`
+            }}>
+              <Link to={prefixLink(page.path)}>
+                {access(page, 'data.images') && <img src={prefixLink(`${page.path}600/${access(page, 'data.images')[0].url}.jpg`)} />}
+                <span>{title}</span>
+              </Link>
           </li>
         )
       }
