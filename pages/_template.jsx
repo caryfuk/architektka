@@ -3,7 +3,6 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'
 import '../styles/main.less'
-
 import { rhythm } from '../utils/typography'
 
 module.exports = React.createClass({
@@ -14,7 +13,7 @@ module.exports = React.createClass({
   },
   render () {
     return (
-      <div className={("ontouchstart" in document.documentElement) ? ' touch' : ' no-touch'}>
+      <div>
         <Headroom>
           <div>
             <Link to={prefixLink('/')}>Architektka</Link>
