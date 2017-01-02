@@ -8,7 +8,7 @@ import ProjectList from '../../components/projectList'
 class CategoryIndex extends React.Component {
   render () {
     return (
-      <div>
+      <div className='categoryPage'>
         <Helmet
           title={`Objekty | ${config.siteTitle}`}
           meta={[

@@ -4,50 +4,22 @@ html, body {
 }
 
 .content {
-  padding: 0 20px 20px 20px;
+  .clearfix();
 }
 
 ul {
-  list-style: none;
   margin: 0;
   padding: 0;
-
-  li {
-    border-bottom: 1px solid #888;
-    margin: 0;
-    padding: 5px 10px;
-
-    img {
-      width: 200px;
-      padding: 0;
-      margin: 0;
-      display: block;
-    }
-
-    &:last-child {
-      border-bottom: 0;
-    }
-  }
+  list-style: none;
 }
 
-.detailImages {
-  margin-bottom: 20px;
+li {
+  margin: 0;
+  padding: 0;
+}
 
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  li {
-    float: left;
-    width: 33%;
-    margin: 0;
-    padding: 0;
-
-    img {
-      display: block;
-      width: 100%;
-    }
-  }
+img {
+  padding: 0;
+  margin: 0;
+  display: block;
 }
