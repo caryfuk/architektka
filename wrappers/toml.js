@@ -49,7 +49,7 @@ module.exports = React.createClass({
                   WebkitAnimationDelay: `${i*0.05}s`
                 }}
                 onClick={() => this.setState({ isOpen: true, photoIndex: i })}>
-                  <img src={`600/${image.url}.jpg`} alt={image.title_sk} />
+                  <img src={`600/${image.url}.jpg`} />
               </li>
             )
           })}
