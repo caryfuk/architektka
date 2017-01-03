@@ -1,5 +1,9 @@
 .categoryPage {
 
+  p {
+    margin-bottom: @baseline;
+  }
+
   ul {
     .clearfix();
 
@@ -21,7 +25,7 @@
         transition: opacity .75s;
 
         &:hover {
-          opacity: 0.8;
+          opacity: 0.66;
         }
       }
 
@@ -29,9 +33,9 @@
         .absPos(auto, @baseline/2, @baseline/2, @baseline/2);
         padding: 0, @baseline/2;
         text-align: center;
-        background: #4caf50;
+        background: #fff;
         opacity: 0;
-        color: #fff;
+        color: #444;
         transition: all .25s;
       }
 
@@ -41,6 +45,26 @@
           opacity: 0.8;
         }
       }
+    }
+
+    @media (min-width: @size-md) {
+      padding: @baseline/2;
+
+      li {
+        width: 25%;
+        padding: 12.5%;
+      }
+
+      img {
+        padding: @baseline/2;
+      }
+    }
+  }
+
+  @media (min-width: @size-md) {
+    
+    p {
+      margin-bottom: 0;
     }
   }
 }

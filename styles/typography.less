@@ -1,22 +1,21 @@
 h1 {
   font-size: 2*@baseline;
-  padding: @baseline/2;
+  padding: @baseline/2 @baseline;
   margin: 0;
   width: 100%;
-  background: #e91e63;
-  color: #fff;
+  color: #333;
 
   a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     .square(3*@baseline);
     text-align: center;
-    background: #f92e73;
+    background: #eee;
     display: inline-block;
 
     &:hover {
-      color: #e91e63;
-      background: #fff;
+      color: #000;
+      background: #999;
     }
   }
 }
@@ -24,6 +23,6 @@ h1 {
 p {
   font-size: @baseline;
   line-height: 1.5*@baseline;
-  margin-bottom: @baseline/2;
-  padding: 0 @baseline/2;
+  padding: 0 @baseline;
+  margin: 0;
 }
