@@ -23,6 +23,7 @@
         height: 100%;
         object-fit: cover;
         transition: opacity .75s;
+        background: #ddd;
 
         &:hover {
           opacity: 0.66;
@@ -47,6 +48,11 @@
         width: 25%;
         padding: 12.5%;
 
+        img {
+          padding: @baseline/4;
+          background: #fff;
+        }
+
         &:hover {
 
           span {
@@ -55,9 +61,6 @@
         }
       }
 
-      img {
-        padding: @baseline/4;
-      }
     }
   }
 }

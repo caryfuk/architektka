@@ -16,13 +16,14 @@
       animation: appear .333s steps(10) forwards;
       cursor: pointer;
       outline: 1px solid #fff;
-
+      
       img {
         .center();
         min-width: 100%;
         height: 100%;
         object-fit: cover;
         transition: opacity .75s;
+        background: #ddd;
 
         &:hover {
           opacity: 0.66;
@@ -41,10 +42,11 @@
       li {
         width: 25%;
         padding: 12.5%;
-      }
 
-      img {
-        padding: @baseline/4;
+        img {
+          padding: @baseline/4;
+          background: #fff;
+        }
       }
     }
   }
