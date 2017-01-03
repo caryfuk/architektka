@@ -18,7 +18,7 @@ module.exports = React.createClass({
     return {
       photoIndex: 0,
       isOpen: false
-    };
+    }
   },
 
   render () {

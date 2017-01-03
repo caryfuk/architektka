@@ -1,25 +1,87 @@
 .headroom {
-  background: #eee;
-  color: #fff;
+  background: rgba(255, 255, 255, 0.75);
   padding: @baseline;
   max-width: @max-width;
   margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  line-height: 2*@baseline;
 
   a {
     text-decoration: none;
     color: #333;
-  }
-
-  li {
-    float: left;
-    padding: 0 @baseline/3;
-    border-bottom: 0;
+    padding: 0 @baseline/2;
+    display: block;
 
     &:hover {
-      background: #ddd;
+      background: #888;
+      color: #fff;
+    }
+  }
+
+  .logo {
+    text-transform: uppercase;
+    background: #333;
+    color: #fff;
+    padding: 0 @baseline/2;
+
+    &:hover {
+      background: #888;
+    }
+  }
+
+  nav {
+
+    li {
+      float: left;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  @media (max-width: (@size-md - 1)) {
+    background: transparent;
+
+    nav {
+
+      ul {
+        display: none;
+
+        li {
+  		    float: none;
+  		    width: 100%;
+  		    background: #333;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+
+      span {
+        display: block;
+  	    background: #333;
+        color: #fff;
+		    .square(2*@baseline);
+  	    cursor: pointer;
+
+        &:after {
+          content: '≡';
+          font-size: 2*@baseline;
+          text-align: center;
+          font-weight: bold;
+          display: block;
+        }
+      }
+
+      ul.open {
+  		  z-index: 9999;
+        display: block;
+        .absPos(auto, @baseline, @baseline);
+	    }
     }
   }
 }
