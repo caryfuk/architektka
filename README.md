@@ -1,6 +1,6 @@
 # Architektka.sk
 Personal website of Zuzana Kňazeová
-Powered with Gatsby - SPA with server-side rendering.
+Powered with Gatsby.
 
 ## List of commands
 - develop: `gatsby develop`
