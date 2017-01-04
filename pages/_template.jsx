@@ -18,16 +18,10 @@ module.exports = React.createClass({
     }
   },
 
-  toggleMenu () {
-    if (this.state.menuOpen) {
-      this.setState({
-        menuOpen: false
-      })
-    } else {
-      this.setState({
-        menuOpen: true
-      })
-    }
+  toggleMenu (e) {
+    this.setState({
+      menuOpen: !this.state.menuOpen
+    })
   },
 
   hideMenu () {
@@ -42,8 +36,9 @@ module.exports = React.createClass({
         <Headroom>
           <Link to={prefixLink('/')} className='logo' onClick={() => this.hideMenu()}>Architektka</Link>
           <nav>
-            <span onClick={() => this.toggleMenu()} />
-            <ul className={this.state.menuOpen ? 'open' : ''} onClick={() => this.hideMenu()}>
+            <input id="menuButton" type='checkbox' checked={this.state.menuOpen} />
+            <label htmlFor='menuButton' onClick={(e) => this.toggleMenu(e)} />
+            <ul onClick={() => this.hideMenu()}>
               <li><Link to={prefixLink('/houses-and-apartments/')}>Domy a byty</Link></li>
               <li><Link to={prefixLink('/commercial/')}>Komerčné objekty</Link></li>
               <li><Link to={prefixLink('/studies/')}>Štúdie</Link></li>
