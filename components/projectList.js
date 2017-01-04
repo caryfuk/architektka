@@ -18,7 +18,7 @@ class ProjectList extends React.Component {
     )
     sortedPages.map((page, i) => {
       if (access(page, 'file.ext') === 'toml' || access(page, 'data.order')) {
-        const title = access(page, 'data.title_sk') || page.path
+        const title = access(page, 'data.title_sk') || access(page, 'data.title_en')
         pageLinks.push(
           <li
             key={page.path}
