@@ -9,15 +9,43 @@ Best house ever.
 '''
 
 [[images]]
-title_en = "Dom Barnova"
-title_sk = "Dom Barnova"
-description_en = "popisek 1"
-description_sk = "popisek 1"
-url = "alt1"
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "vizualizácia, alternativa A"
+url = "alt-A"
 
 [[images]]
-title_en = "Dom Barnova"
-title_sk = "Dom Barnova"
-description_en = "popisek 2"
-description_sk = "popisek 2"
-url = "alt2"
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "vizualizácia, alternativa B"
+url = "alt-B"
+
+[[images]]
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "analýza pozemku, varianta A"
+url = "analyza-pozemku-A"
+
+[[images]]
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "situacia, varianta A"
+url = "situacia-A"
+
+[[images]]
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "analýza pozemku, varianta B"
+url = "analyza-pozemku-B"
+
+[[images]]
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "podorys varianty B"
+url = "podorys-B"
