@@ -32,8 +32,8 @@ node_modules
 public
 
 #generated images
-pages/*/*/600/*
-pages/*/*/1600/*
+**/600
+**/1600
 
 #lock files
 yarn.lock
