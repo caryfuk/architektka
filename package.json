@@ -27,7 +27,8 @@
     "react-typography": "^0.15.0",
     "safe-access": "^0.1.0",
     "toml-js": "0.0.8",
-    "typography": "^0.15.0"
+    "typography": "^0.15.0",
+    "typography-theme-github": "^0.15.1"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0"

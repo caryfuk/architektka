@@ -2,32 +2,9 @@ import ReactDOM from 'react-dom/server'
 import React from 'react'
 import Typography from 'typography'
 import { GoogleFont } from 'react-typography'
+import githubTheme from 'typography-theme-github'
 
-const options = {
-  googleFonts: [
-    {
-      name: 'Montserrat',
-      styles: [
-        '700',
-      ],
-    },
-    {
-      name: 'Arvo',
-      styles: [
-        '400',
-        '400i',
-        '700',
-      ],
-    },
-  ],
-  headerFontFamily: ['Montserrat', 'sans-serif'],
-  bodyFontFamily: ['Arvo', 'sans-serif'],
-  baseFontSize: '17px',
-  baseLineHeight: 1.65,
-  scaleRatio: 2.25
-}
-
-const typography = new Typography(options)
+const typography = new Typography(githubTheme)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== 'production') {
