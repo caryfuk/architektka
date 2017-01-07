@@ -5,3 +5,17 @@ description_en = '''
 '''
 description_sk = '''
 '''
+
+[[images]]
+title_en = ""
+title_sk = "povodny stav"
+description_en = ""
+description_sk = "povodný stav - podorys"
+url = "povodny-podorys"
+
+[[images]]
+title_en = ""
+title_sk = "navrh"
+description_en = ""
+description_sk = "návrh - podorys"
+url = "navrh-podorys"
