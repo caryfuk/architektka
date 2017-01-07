@@ -56,7 +56,7 @@ module.exports = React.createClass({
         </ul>
         {isOpen && data.images.length > 0 &&
           <Lightbox
-            mainSrc={`1200/${data.images[photoIndex].url}.jpg`}
+            mainSrc={`1600/${data.images[photoIndex].url}.jpg`}
             imageTitle={
               data.images[photoIndex].title_sk ?
               data.images[photoIndex].title_sk : data.images[photoIndex].title_en
@@ -65,8 +65,8 @@ module.exports = React.createClass({
               data.images[photoIndex].description_sk ?
               data.images[photoIndex].description_sk : data.images[photoIndex].description_en
             }
-            nextSrc={`1200/${data.images[(photoIndex + 1) % data.images.length].url}.jpg`}
-            prevSrc={`1200/${data.images[(photoIndex + data.images.length - 1) % data.images.length].url}.jpg`}
+            nextSrc={`1600/${data.images[(photoIndex + 1) % data.images.length].url}.jpg`}
+            prevSrc={`1600/${data.images[(photoIndex + data.images.length - 1) % data.images.length].url}.jpg`}
             imagePadding={0}
             onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() => this.setState({
