@@ -1,0 +1,46 @@
+// override lightbox styles
+
+.ril-outer {
+  background: #fff !important;
+  outline: 1px solid #fff;
+}
+.ril-toolbar {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.ril-toolbar__item {
+  color: #333 !important;
+  filter: invert(100%);
+}
+
+.ril-toolbar-left .ril-toolbar__item {
+  filter: none;
+}
+
+.ril-toolbar-left {
+  padding-left: @baseline !important;
+}
+
+.ril-toolbar-right {
+  padding-right: @baseline/4 !important;
+}
+
+.ril-caption {
+  background: rgba(255, 255, 255, 0.75) !important;
+}
+
+.ril-caption-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: @baseline 2.5*@baseline !important;
+  text-align: center;
+  color: #333 !important;
+}
+
+.ril-next-button, .ril-prev-button {
+  top: auto !important;
+  filter: invert(100%);
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  padding: 2*@baseline 1.25*@baseline !important;
+}
