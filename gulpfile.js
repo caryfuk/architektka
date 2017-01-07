@@ -63,8 +63,6 @@ gulp.task('default', function () {
     // output each image to the dest path
     // maintaining the folder structure
     .pipe(rename(function (path) {
-      console.log(path.dirname);
-      //path.dirname = path.dirname.match(/\/.+?\//)[0]+type.folder;
       path.dirname += '/..'+type.folder;
     }))
     .pipe(gulp.dest(function(file) {
