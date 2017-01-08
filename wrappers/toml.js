@@ -57,10 +57,6 @@ module.exports = React.createClass({
         {isOpen && data.images.length > 0 &&
           <Lightbox
             mainSrc={`1600/${data.images[photoIndex].url}.jpg`}
-            imageTitle={
-              data.images[photoIndex].title_sk ?
-              data.images[photoIndex].title_sk : data.images[photoIndex].title_en
-            }
             imageCaption={
               data.images[photoIndex].description_sk ?
               data.images[photoIndex].description_sk : data.images[photoIndex].description_en

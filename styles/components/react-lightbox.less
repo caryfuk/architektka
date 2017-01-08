@@ -4,13 +4,24 @@
   background: #fff !important;
   outline: 1px solid #fff;
 }
+
 .ril-toolbar {
-  background: rgba(255, 255, 255, 0.5) !important;
+  background: transparent !important;
+}
+
+.ril-zoom-out, .ril-zoom-in {
+  display: none;
 }
 
 .ril-toolbar__item {
-  color: #333 !important;
   filter: invert(100%);
+  background: transparent;
+  line-height: inherit !important;
+
+  .ril-close {
+    padding: 2*@baseline 1.85*@baseline !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
 }
 
 .ril-toolbar-left .ril-toolbar__item {
@@ -18,29 +29,31 @@
 }
 
 .ril-toolbar-left {
-  padding-left: @baseline !important;
+  visibility: hidden;
 }
 
 .ril-toolbar-right {
-  padding-right: @baseline/4 !important;
+  padding-right: 0 !important;
 }
 
 .ril-caption {
-  background: rgba(255, 255, 255, 0.75) !important;
+  background: transparent !important;
 }
 
 .ril-caption-content {
-  width: 100%;
   box-sizing: border-box;
-  padding: @baseline 2.5*@baseline !important;
-  text-align: center;
+  padding: 0.5*@baseline @baseline !important;
+  font-size: 0.8*@baseline;
+  background: rgba(255, 255, 255, 0.5);
   color: #333 !important;
 }
 
 .ril-next-button, .ril-prev-button {
-  top: auto !important;
   filter: invert(100%);
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  padding: 2*@baseline 1.25*@baseline !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  opacity: 0 !important;
+
+  &:hover {
+    opacity: 1 !important;
+  }
 }
