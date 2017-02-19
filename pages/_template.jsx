@@ -39,10 +39,10 @@ module.exports = React.createClass({
             <input id="menuButton" type='checkbox' checked={this.state.menuOpen} />
             <label htmlFor='menuButton' onClick={(e) => this.toggleMenu(e)} />
             <ul onClick={() => this.hideMenu()}>
-              <li><Link to={prefixLink('/houses-and-apartments/')}>Domy a byty</Link></li>
-              <li><Link to={prefixLink('/commercial/')}>Komerčné objekty</Link></li>
-              <li><Link to={prefixLink('/studies/')}>Štúdie</Link></li>
-              <li><Link to={prefixLink('/objects/')}>Objekty</Link></li>
+              <li><Link to={prefixLink('/complex-solutions/')}>Complex solutions</Link></li>
+              <li><Link to={prefixLink('/interior-design/')}>Interior design</Link></li>
+              <li><Link to={prefixLink('/exterior-design/')}>Exterior design</Link></li>
+              <li><Link to={prefixLink('/objects/')}>Objects</Link></li>
               <li><Link to={prefixLink('/contact/')}>Contact me</Link></li>
             </ul>
           </nav>

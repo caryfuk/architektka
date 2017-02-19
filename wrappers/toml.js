@@ -24,8 +24,8 @@ module.exports = React.createClass({
   render () {
     const route = this.props.route
     const data = route.page.data
-    const title = data.title_sk !== '' ? data.title_sk : data.title_en
-    const description = data.description_sk !== '' ? data.description_sk : data.description_en
+    const title = data.title_en
+    const description = data.description_en
     const {
       photoIndex,
       isOpen,
@@ -58,8 +58,7 @@ module.exports = React.createClass({
           <Lightbox
             mainSrc={`1600/${data.images[photoIndex].url}.jpg`}
             imageCaption={
-              data.images[photoIndex].description_sk ?
-              data.images[photoIndex].description_sk : data.images[photoIndex].description_en
+              data.images[photoIndex].description_en
             }
             nextSrc={`1600/${data.images[(photoIndex + 1) % data.images.length].url}.jpg`}
             prevSrc={`1600/${data.images[(photoIndex + data.images.length - 1) % data.images.length].url}.jpg`}

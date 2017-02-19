@@ -16,7 +16,7 @@ class CategoryIndex extends React.Component {
           ]}
         />
         <h1>Contact me</h1>
-        <form action='https://formspree.io/pavel.moravec@gmail.com' method='POST'>
+        <form action='https://formspree.io/zuzana.knazeova@gmail.com' method='POST'>
           <div className='pair'>
             <label htmlFor='formName'>Your name:</label>
             <input id='formName' type='text' name='name' />

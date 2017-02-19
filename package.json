@@ -23,7 +23,6 @@
     "react-headroom": "^2.1.2",
     "react-helmet": "^3.2.2",
     "react-image-lightbox": "^3.4.1",
-    "react-slick": "^0.14.5",
     "react-typography": "^0.15.0",
     "safe-access": "^0.1.0",
     "toml-js": "0.0.8",
