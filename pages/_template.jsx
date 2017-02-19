@@ -43,7 +43,7 @@ module.exports = React.createClass({
               <li><Link to={prefixLink('/commercial/')}>Komerčné objekty</Link></li>
               <li><Link to={prefixLink('/studies/')}>Štúdie</Link></li>
               <li><Link to={prefixLink('/objects/')}>Objekty</Link></li>
-              <li><Link to={prefixLink('/blog/')}>Blog</Link></li>
+              <li><Link to={prefixLink('/contact/')}>Contact me</Link></li>
             </ul>
           </nav>
         </Headroom>

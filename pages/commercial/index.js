@@ -10,7 +10,7 @@ class CategoryIndex extends React.Component {
     return (
       <div className='categoryPage'>
         <Helmet
-          title={`Komerčné ojekty | ${config.siteTitle}`}
+          title={`Komerčné objekty | ${config.siteTitle}`}
           meta={[
             {"name": "description", "content": "Komerčné objekty"},
             {"name": "keywords", "content": "komerčné objekty, architektura, portfolio, Zuzana Kňazeová, Knazeova"}
