@@ -1,0 +1,85 @@
+title_en = "Vila M"
+title_sk = "Vila M"
+order = 1
+category = ["interior-design"]
+description_en = '''
+'''
+description_sk = '''
+'''
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "vila-po-prelome"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "vila-po-prelome1"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "vila-po-prelome11"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "vila-po-prelome2"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "vila-po-prelome22"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "vila-po-prelome3"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "vila-po-prelome33"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "vila-po-prelome4"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "vila-po-prelome44"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "vila-po-prelome5"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "vila-po-prelome55"

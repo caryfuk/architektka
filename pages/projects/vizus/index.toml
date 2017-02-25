@@ -1,0 +1,46 @@
+title_en = "Vizus"
+title_sk = "Vizus"
+order = 1
+category = ["interior-design", "exterior-design"]
+description_en = '''
+The eye – fascinating by its functionality, simple in its construction.
+It is only natural that its shape and function has inspired me to design this eye care centre.
+Click on thumbnails for detailed pictures.
+'''
+description_sk = '''
+'''
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "picarch4a"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "picarch4b"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "picarch4c"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "picarch4d"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "picarch4e"

@@ -1,0 +1,36 @@
+title_en = "Café"
+title_sk = "Café"
+order = 1
+category = ["interior-design"]
+description_en = '''
+'''
+description_sk = '''
+'''
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "1"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "2"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "3"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "4"

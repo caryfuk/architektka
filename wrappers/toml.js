@@ -37,7 +37,7 @@ module.exports = React.createClass({
           title={`${title} | ${config.siteTitle}`}
         />
         {/* the match is for one dir up */}
-        <h1><Link to={prefixLink(route.path.match(/\/.+?\//)[0])}>&lt;</Link> {title}</h1>
+        <h1><span onClick={()=>{ history.back() }}>&lt;</span> {title}</h1>
         <p>{description}</p>
         <ul>
           {data.images && data.images.map((image, i) => {

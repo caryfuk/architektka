@@ -1,0 +1,52 @@
+.contactForm {
+  max-width: 900px;
+  padding: 0 @baseline;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  .pair {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: @baseline;
+
+    label {
+      flex: 0 0 100%;
+    }
+
+    input, textarea {
+      flex: 0 0 100%;
+      border-width: 0 0 1px 0;
+      border-style: solid;
+      border-color: #ccc;
+      padding: @baseline/2;
+      border-radius: @baseline/8;
+
+      &:focus {
+        outline: none;
+        background: #f8f8f8;
+      }
+    }
+
+    textarea {
+      height: 8*@baseline;
+    }
+
+    @media (min-width: @size-md) {
+      
+      label {
+        text-align: right;
+        flex: 0 0 10*@baseline;
+        padding: @baseline/2 @baseline;
+      }
+
+      input, textarea {
+        flex: auto; 
+      }
+
+      button {
+        margin-left: 10*@baseline;
+      }
+    }
+  }
+}

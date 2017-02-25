@@ -3,18 +3,26 @@ h1 {
   border: 0;
   margin: 0;
 
-  a {
+  span {
     color: #333;
     text-decoration: none;
-    .square(3*@baseline);
+    .square(2.66*@baseline);
     text-align: center;
     background: #eee;
     display: inline-block;
+    cursor: pointer;
 
     &:hover {
-      color: #000;
+      background: rgba(32, 32, 32, 0.8);
+      color: #fff;
     }
   }
+}
+
+h2 {
+  border: 0;
+  padding: 0 @baseline;
+  margin: 0;
 }
 
 p {

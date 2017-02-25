@@ -1,0 +1,22 @@
+title_en = "Professor"
+title_sk = "Profesor"
+order = 1
+category = ["interior-design"]
+description_en = '''
+'''
+description_sk = '''
+'''
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "farebnost"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "pracovna"

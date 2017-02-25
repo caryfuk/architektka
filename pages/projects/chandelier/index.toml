@@ -1,0 +1,50 @@
+title_en = "Chandelier"
+title_sk = "Luster"
+order = 1
+category = ["objects"]
+description_en = '''
+'''
+description_sk = '''
+'''
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "2017-01-02-10-24"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "2017-01-02-15-03"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "2017-01-03-11-42"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "2017-01-03-11-43-1"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "2017-01-03-11-45"
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "2017-01-03-11-46"

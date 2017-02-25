@@ -39,7 +39,6 @@ module.exports = React.createClass({
             <input id="menuButton" type='checkbox' checked={this.state.menuOpen} />
             <label htmlFor='menuButton' onClick={(e) => this.toggleMenu(e)} />
             <ul onClick={() => this.hideMenu()}>
-              <li><Link to={prefixLink('/complex-solutions/')}>Complex solutions</Link></li>
               <li><Link to={prefixLink('/interior-design/')}>Interior design</Link></li>
               <li><Link to={prefixLink('/exterior-design/')}>Exterior design</Link></li>
               <li><Link to={prefixLink('/objects/')}>Objects</Link></li>

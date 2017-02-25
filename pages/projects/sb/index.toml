@@ -1,0 +1,18 @@
+title_en = "Šarišské Bohdanovce"
+title_sk = "Šarišské Bohdanovce"
+order = 1
+category = ["interior-design", "exterior-design"]
+description_en = '''
+Family means unity to me. Our house is strictly copying this motto.
+From the outside it is tough and strong to protect and assure the safety. Inside it is warm, cosy and unifying, respecting the needs of its inhabitants.
+Accordingly, there is an atelier, office, game or even guest room downstairs. Upstairs there is a big kitchen for Mum, a big garage for Dad and two terraces for all of us to spend time together.
+'''
+description_sk = '''
+'''
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "ktore"

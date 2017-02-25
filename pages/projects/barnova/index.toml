@@ -1,0 +1,53 @@
+title_en = "Barnova"
+title_sk = "Barnova"
+order = 1
+category = ["interior-design", "exterior-design"]
+featured = true
+description_en = '''
+Best house ever.
+'''
+description_sk = '''
+Best house ever.
+'''
+
+[[images]]
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "vizualizácia, alternativa A"
+url = "alt-A"
+
+[[images]]
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "vizualizácia, alternativa B"
+url = "alt-B"
+
+[[images]]
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "analýza pozemku, varianta A"
+url = "analyza-pozemku-A"
+
+[[images]]
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "situacia, varianta A"
+url = "situacia-A"
+
+[[images]]
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "analýza pozemku, varianta B"
+url = "analyza-pozemku-B"
+
+[[images]]
+title_en = "Barnova"
+title_sk = "Barnova"
+description_en = ""
+description_sk = "podorys varianty B"
+url = "podorys-B"

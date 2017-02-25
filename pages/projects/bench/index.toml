@@ -1,0 +1,15 @@
+title_en = "Bench"
+title_sk = "Lavička"
+order = 1
+category = ["objects"]
+description_en = '''
+'''
+description_sk = '''
+'''
+
+[[images]]
+title_en = ""
+title_sk = ""
+description_en = ""
+description_sk = ""
+url = "2016-12-28-14-37"
