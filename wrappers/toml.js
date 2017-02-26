@@ -4,8 +4,8 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import Helmet from 'react-helmet'
 import { config } from 'config'
-import Lightbox from 'react-image-lightbox';
 import { findDOMNode } from 'react-dom';
+let Lightbox
 
 module.exports = React.createClass({
   propTypes () {
@@ -23,6 +23,7 @@ module.exports = React.createClass({
   },
 
   componentDidMount() {
+    Lightbox = require('react-image-lightbox');
     this.setState({
       isMounted: true
     });
@@ -44,8 +45,7 @@ module.exports = React.createClass({
         <Helmet
           title={`${title} | ${config.siteTitle}`}
         />
-        {/* the match is for one dir up */}
-        <h1><span onClick={()=>{ history.back() }}>&lt;</span> {title}</h1>
+        <h1>{isMounted ? <span onClick={()=>{ history.back() }}>&lt;</span> : false} {title}</h1>
         <p>{description}</p>
         <ul>
           {data.images && data.images.map((image, i) => {
