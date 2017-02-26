@@ -17,8 +17,15 @@ module.exports = React.createClass({
   getInitialState () {
     return {
       photoIndex: 0,
-      isOpen: false
+      isOpen: false,
+      isMounted: false
     }
+  },
+
+  componentDidMount() {
+    this.setState({
+      isMounted: true
+    });
   },
 
   render () {
@@ -29,6 +36,7 @@ module.exports = React.createClass({
     const {
       photoIndex,
       isOpen,
+      isMounted
     } = this.state
 
     return (
@@ -54,7 +62,7 @@ module.exports = React.createClass({
             )
           })}
         </ul>
-        {isOpen && data.images.length > 0 &&
+        {isMounted && isOpen && data.images.length > 0 &&
           <Lightbox
             mainSrc={`1600/${data.images[photoIndex].url}.jpg`}
             imageCaption={
