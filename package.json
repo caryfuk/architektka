@@ -3,6 +3,9 @@
   "description": "personal website",
   "version": "0.1.0",
   "author": "Pavel Moravec <pavel.moravec@gmail.com>",
+  "engines": {
+    "node" : "10.13"
+  },
   "dependencies": {
     "front-matter": "^2.1.1",
     "gatsby": "^0.12.20",
