@@ -34,7 +34,7 @@ var images = [
 ];
 
 // images gulp task
-gulp.task('default', function () {
+gulp.task('default', function (done) {
 
   // loop through image groups		
   images.forEach(function(type){
@@ -69,4 +69,6 @@ gulp.task('default', function () {
       return './pages';
     }));
   });
+
+  done();
 });
