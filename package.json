@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "Pavel Moravec <pavel.moravec@gmail.com>",
   "engines": {
-    "node" : "10.13"
+    "node" : "8.17"
   },
   "dependencies": {
     "front-matter": "^2.1.1",
